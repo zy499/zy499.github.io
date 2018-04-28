@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<!--begin head-->
+<head>
+    <meta charset="utf-8">
+<!--begin title-->
+
+<title>
+    
+    媒体查询使用——@media |
+    
+    zy499</title>
+<!--end title-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--begin mete-->
+
+<meta name="author" content="John Doe"/>
+
+<!--end mete-->
+<!--begin keywords-->
+<meta name="keywords" content="css,css3,hexo,html5,js"/>
+<!--end keywords-->
+<!--begin rss-->
+
+<!--end rss-->
+<!--begin favicon-->
+
+<link rel="icon" href="/favicon.ico">
+
+<!--end favicon-->
+<!--begin style-->
+
+<!-- stylesheets list from config.yml -->
+
+<link rel="stylesheet" href="/css/hannah.css">
+
+
+<!--end style-->
+</head>
+<!--end head-->
+<!--begin body-->
+<body class="container-fluid">
+
+<!--begin menu-->
+<div class="hannah-menu">
+    <i class="fh fh-ravelry fa-2x btn fixed-menu animated bounce" id="btn_menu" aria-hidden="true"></i>
+    <div class="menu-outer container-fluid hide animated" id="div_menu">
+        <div class="row" style="margin-bottom: 5px;">
+            
+            <div class="col-md-offset-2 col-md-3 col-xs-4 text-center left-social">
+                
+                <a target="_blank" href="https://github.com/zy499" title="GitHub"><i class="fh fh-github"></i></a>
+                
+                <style>
+                    .left-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    .left-social * {
+                        color: #f1ce8e;
+                    }
+
+                    @media (max-width: 767px) {
+                        .left-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+                </style>
+            </div>
+            <!--begin handImg-->
+            <div class="col-md-2 col-xs-4 text-center">
+                
+                <img src="/img/logo.jpg" alt="Head Image" class="img-circle">
+                
+            </div>
+            <!--end handImg-->
+            <div class="col-md-3 col-xs-4 text-center right-social">
+                
+                <style>
+                    .right-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    @media (max-width: 767px) {
+                        .right-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+
+                    .right-social * {
+                        color: #f1ce8e;
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-push-2 col-xs-12 ">
+                <dl class="menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-bars" aria-hidden="true"></i> Menu
+                    </dt>
+                    <dd class="menu-content-content">
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/" class="btn btn-block">
+                                
+                                <i class="fh fh-ravelry"></i>
+                                Home
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/categories" class="btn btn-block">
+                                
+                                <i class="fh fh-cubes"></i>
+                                Category
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/tags" class="btn btn-block">
+                                
+                                <i class="fh fh-tags"></i>
+                                Tag
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/archives" class="btn btn-block">
+                                
+                                <i class="fh fh-archive"></i>
+                                Archives
+                            </a>
+                        </div>
+                        
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-offset-2 col-xs-12 ">
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-cubes" aria-hidden="true"></i> Category
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        <ul class="menu-cate-list"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/hexo/"><i class="fh fh-cube" aria-hidden="true"></i> hexo</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/html/"><i class="fh fh-cube" aria-hidden="true"></i> html</a><span class="menu-cate-list-count">1</span><ul class="menu-cate-list-child"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/html/css/"><i class="fh fh-cube" aria-hidden="true"></i> css</a><span class="menu-cate-list-count">1</span></li></ul></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/javaScript/"><i class="fh fh-cube" aria-hidden="true"></i> javaScript</a><span class="menu-cate-list-count">2</span></li></ul>
+                    </dd>
+                </dl>
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-tag" aria-hidden="true"></i> Tags
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        <ul class="menu-tag-list"><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/css/"><i class="fh fh-tag" aria-hidden="true"></i> css</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/css3/"><i class="fh fh-tag" aria-hidden="true"></i> css3</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/hexo/"><i class="fh fh-tag" aria-hidden="true"></i> hexo</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/html5/"><i class="fh fh-tag" aria-hidden="true"></i> html5</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/js/"><i class="fh fh-tag" aria-hidden="true"></i> js</a><span class="menu-tag-list-count">2</span></li></ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end menu-->
+
+<div class="row hannah-body">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <!--begin breadcrumb-->
+        <div class="bread-crumb">
+    <ul class="bread-crumb-menu animated rubberBand">
+        <li><a href="/"><i class="fh fh-ravelry" aria-hidden="true"></i> Home</a></li>
+        
+        <li><a href="/categories/html/"><i class="fh fh-cube" aria-hidden="true"></i> html</a>
+        </li>
+        
+        <li><a href="/categories/html/css/"><i class="fh fh-cube" aria-hidden="true"></i> css</a>
+        </li>
+        
+        <li>
+            
+            <i class="fh fh-newspaper-o" aria-hidden="true"></i>
+            
+            媒体查询使用——@media
+        </li>
+        
+    </ul>
+    <div class="bread-crumb-search">
+        <div class="search">
+    <i class="fh fh-search icon-search"></i>
+    <input placeholder="Search ..." onkeyup="searchFunc(this,event,'/search.xml')"
+           class="input-search animated fadeInRight"/>
+    <div class="search-result animated fadeInRight">
+        <a class="animated tada col-lg-12 search-result-item result-link" href="/2018/04/28/媒体查询/">媒体查询使用——@media</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2015/10/29/作用域与执行上下文/">作用域与执行上下文</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2015/10/28/02_prototype原型/">原型</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2015/09/23/hello-world/">Hello World</a>
+    </div>
+</div>
+    </div>
+</div>
+        <!--end breadcrumb-->
+        <article class="post animated rollIn">
+    <h1 class="post-title">媒体查询使用——@media</h1>
+    <div class="post-subtitle">
+        
+        <time datetime="2018-04-28T06:39:16.810Z" class="item">
+            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-04-28
+        </time>
+        
+        
+        <span class="item">
+      <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
+            
+            <a class="label label-primary tags" href="/categories/html/">
+           <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;html
+        </a>
+            
+            <a class="label label-primary tags" href="/categories/html/css/">
+           <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;css
+        </a>
+            
+        </span>
+        
+        
+        <span class="item">
+        <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
+            
+            <a class="label label-info tags" href="/tags/html5/">
+            <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;html5
+            </a>
+            
+            <a class="label label-info tags" href="/tags/css3/">
+            <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;css3
+            </a>
+            
+        </span>
+        
+    </div>
+    
+    <h1 id="媒体查询使用方法-media"><a href="#媒体查询使用方法-media" class="headerlink" title="媒体查询使用方法@media"></a>媒体查询使用方法@media</h1><p>标签（空格分隔）： css3,html5</p>
+<hr>
+<p>Media Queries能在不同的条件下使用不同的样式，使页面在不同在终端设备下达到不同的渲染效果。前面简单的介绍了Media Queries如何引用到项目中，但Media Queries有其自己的使用规则。具体来说,Media Queries的使用方法如下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@media 媒体类型and （媒体特性）&#123;你的样式&#125;</span><br></pre></td></tr></table></figure></p>
+<p>注意：使用Media Queries必须要使用“@media”开头，然后指定媒体类型（也可以称为设备类型），随后是指定媒体特性（也可以称之为设备特性）。媒体特性的书写方式和样式的书写方式非常相似，主要分为两个部分，第一个部分指的是媒体特性，第二部分为媒体特性所指定的值，而且这两个部分之间使用冒号分隔。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(max-width: 480px)</span><br></pre></td></tr></table></figure></p>
+<p>从前面表中可以得知，主要有十种媒体类型和13种媒体特性，将其组合就类似于不同的CSS集合。<br>但与CSS属性不同的是，媒体特性是通过min/max来表示大于等于或小于做为逻辑判断，<br>而不是使用小于（&lt;）和大于（&gt;）这样的符号来判断。接下来一起来看看Media Queries在实际项目中常用的方式。</p>
+<h2 id="1-最大宽度max-width"><a href="#1-最大宽度max-width" class="headerlink" title="1.最大宽度max-width"></a>1.最大宽度max-width</h2><p>“max-width”是媒体特性中最常用的一个特性，其意思是指媒体类型小于或等于指定的宽度时，样式生效。如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width:480px)&#123;</span><br><span class="line"> .ads &#123;</span><br><span class="line">   display:none;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面表示的是：当屏幕小于或等于480px时,页面中的广告区块（.ads）都将被隐藏。</p>
+<h2 id="2-最小宽度min-width"><a href="#2-最小宽度min-width" class="headerlink" title="2.最小宽度min-width"></a>2.最小宽度min-width</h2><p>“min-width”与“max-width”相反，指的是媒体类型大于或等于指定宽度时，样式生效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (min-width:900px)&#123;</span><br><span class="line">.wrapper&#123;width: 980px;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面表示的是：当屏幕大于或等于900px时，容器“.wrapper”的宽度为980px。</p>
+<h2 id="3-多个媒体特性使用"><a href="#3-多个媒体特性使用" class="headerlink" title="3.多个媒体特性使用"></a>3.多个媒体特性使用</h2><p>Media Queries可以使用关键词”and”将多个媒体特性结合在一起。也就是说，一个Media Query中可以包含0到多个表达式，表达式又可以包含0到多个关键字，以及一种媒体类型。</p>
+<p>当屏幕在600px~900px之间时，body的背景色渲染为“#f5f5f5”，如下所示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (min-width:600px) and (max-width:900px)&#123;</span><br><span class="line">  body &#123;background-color:#f5f5f5;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-设备屏幕的输出宽度Device-Width"><a href="#4-设备屏幕的输出宽度Device-Width" class="headerlink" title="4.设备屏幕的输出宽度Device Width"></a>4.设备屏幕的输出宽度Device Width</h2><p>在智能设备上，例如iPhone、iPad等，还可以根据屏幕设备的尺寸来设置相应的样式（或者调用相应的样式文件）。同样的，对于屏幕设备同样可以使用“min/max”对应参数，如“min-device-width”或者“max-device-width”。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (max-device-width:480px)&quot; href=&quot;iphone.css&quot; /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>上面的代码指的是“iphone.css”样式适用于最大设备宽度为480px，比如说iPhone上的显示，这里的“max-device-width”所指的是设备的实际分辨率，也就是指可视面积分辨率。</p>
+<ol start="5">
+<li>not关键词</li>
+</ol>
+<hr>
+<p>使用关键词“not”是用来排除某种制定的媒体类型，也就是用来排除符合表达式的设备。换句话说，not关键词表示对后面的表达式执行取反操作，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@media not print and (max-width: 1200px)&#123;样式代码&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面代码表示的是：样式代码将被使用在除打印设备和设备宽度小于1200px下所有设备中。</p>
+<h2 id="6-only关键词"><a href="#6-only关键词" class="headerlink" title="6.only关键词"></a>6.only关键词</h2><hr>
+<p>only用来指定某种特定的媒体类型，可以用来排除不支持媒体查询的浏览器。其实only很多时候是用来对那些不支持Media Query但却支持Media Type的设备隐藏样式表的。其主要有：支持媒体特性的设备，正常调用样式，此时就当only不存在；表示不支持媒体特性但又支持媒体类型的设备，这样就会不读样式，因为其先会读取only而不是screen；另外不支持Media Queries的浏览器，不论是否支持only，样式都不会被采用。如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;linkrel=&quot;stylesheet&quot; media=&quot;only screen and (max-device-width:240px)&quot; href=&quot;android240.css&quot; /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在Media Query中如果没有明确指定Media Type，那么其默认为all，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;linkrel=&quot;stylesheet&quot; media=&quot;(min-width:701px) and (max-width:900px)&quot; href=&quot;mediu.css&quot; /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>另外在样式中，还可以使用多条语句来将同一个样式应用于不同的媒体类型和媒体特性中，指定方式如下所示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;linkrel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; media=&quot;handheld and (max-width:480px), screen and (min-width:960px)&quot; /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>上面代码中style.css样式被用在宽度小于或等于480px的手持设备上，或者被用于屏幕宽度大于或等于960px的设备上。</p>
+<p>到目前为止，CSS3 Media Queries得到了众多浏览器支持，除了IE6-8浏览器不支持之外，在所有现代浏览器中都可以完美支持。还有一个与众不同的是，Media Queries在其他浏览器中不要像其他CSS3属性一样在不同的浏览器中添加前缀。</p>
+
+</article>
+<ol class="animated rollIn hannah-toc"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-1"><a class="animated rollIn hannah-toc-link" href="#媒体查询使用方法-media"><span class="animated rollIn hannah-toc-text">媒体查询使用方法@media</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#1-最大宽度max-width"><span class="animated rollIn hannah-toc-text">1.最大宽度max-width</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#2-最小宽度min-width"><span class="animated rollIn hannah-toc-text">2.最小宽度min-width</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#3-多个媒体特性使用"><span class="animated rollIn hannah-toc-text">3.多个媒体特性使用</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#4-设备屏幕的输出宽度Device-Width"><span class="animated rollIn hannah-toc-text">4.设备屏幕的输出宽度Device Width</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#6-only关键词"><span class="animated rollIn hannah-toc-text">6.only关键词</span></a></li></ol></li></ol>
+<div class="animated bounceInDown paginations">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <nav>
+            
+            <span class="page-content col-md-8 col-md-offset-2 col-xs-offset-4 col-xs-4 text-center">
+                
+            </span>
+            
+            <a href="/2015/10/29/作用域与执行上下文/" class="next col-md-2 col-xs-4 text-right">Next &rarr;</a>
+            
+        </nav>
+        <div>
+            <div class="col-md-6 col-xs-6 text-left">
+                
+            </div>
+            <div class="col-md-6 col-xs-6 text-right">
+                
+                作用域与执行上下文
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--begin comments-->
+        
+<div class="comments" id="comments">
+    
+
+</div>
+
+
+        <!--end comments-->
+    </div>
+</div>
+
+<!--begin footer-->
+<footer id="footer" class="footer animated fadeInUp hide">
+    <p><i class="copy">&copy;</i> 2018 <a href="https://github.com/zy499"></a> All Right Reserved.</p>
+    <p>Powered by <a href="http://hexo.io">Hexo</a>.此主题来自<a href="https://github.com/objectyan/hexo-theme-hannah">hannah</a></p>
+</footer>
+<!--end footer-->
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/hannah.js"></script>
+
+
+<!--begin analytics-->
+
+
+<!--end analytics-->
+</body>
+<!--end body-->
+</html>
