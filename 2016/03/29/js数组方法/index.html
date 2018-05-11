@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<!--begin head-->
+<head>
+    <meta charset="utf-8">
+<!--begin title-->
+
+<title>
+    
+    js数组方法大全 |
+    
+    zy499</title>
+<!--end title-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--begin mete-->
+
+<meta name="author" content="John Doe"/>
+
+<!--end mete-->
+<!--begin keywords-->
+<meta name="keywords" content="css,css3,hexo,html5,js"/>
+<!--end keywords-->
+<!--begin rss-->
+
+<!--end rss-->
+<!--begin favicon-->
+
+<link rel="icon" href="/favicon.ico">
+
+<!--end favicon-->
+<!--begin style-->
+
+<!-- stylesheets list from config.yml -->
+
+<link rel="stylesheet" href="/css/hannah.css">
+
+
+<!--end style-->
+</head>
+<!--end head-->
+<!--begin body-->
+<body class="container-fluid">
+
+<!--begin menu-->
+<div class="hannah-menu">
+    <i class="fh fh-ravelry fa-2x btn fixed-menu animated bounce" id="btn_menu" aria-hidden="true"></i>
+    <div class="menu-outer container-fluid hide animated" id="div_menu">
+        <div class="row" style="margin-bottom: 5px;">
+            
+            <div class="col-md-offset-2 col-md-3 col-xs-4 text-center left-social">
+                
+                <a target="_blank" href="https://github.com/zy499" title="GitHub"><i class="fh fh-github"></i></a>
+                
+                <style>
+                    .left-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    .left-social * {
+                        color: #f1ce8e;
+                    }
+
+                    @media (max-width: 767px) {
+                        .left-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+                </style>
+            </div>
+            <!--begin handImg-->
+            <div class="col-md-2 col-xs-4 text-center">
+                
+                <img src="/img/logo.jpg" alt="Head Image" class="img-circle">
+                
+            </div>
+            <!--end handImg-->
+            <div class="col-md-3 col-xs-4 text-center right-social">
+                
+                <style>
+                    .right-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    @media (max-width: 767px) {
+                        .right-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+
+                    .right-social * {
+                        color: #f1ce8e;
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-push-2 col-xs-12 ">
+                <dl class="menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-bars" aria-hidden="true"></i> Menu
+                    </dt>
+                    <dd class="menu-content-content">
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/" class="btn btn-block">
+                                
+                                <i class="fh fh-ravelry"></i>
+                                Home
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/categories" class="btn btn-block">
+                                
+                                <i class="fh fh-cubes"></i>
+                                Category
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/tags" class="btn btn-block">
+                                
+                                <i class="fh fh-tags"></i>
+                                Tag
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/archives" class="btn btn-block">
+                                
+                                <i class="fh fh-archive"></i>
+                                Archives
+                            </a>
+                        </div>
+                        
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-offset-2 col-xs-12 ">
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-cubes" aria-hidden="true"></i> Category
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        <ul class="menu-cate-list"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/hexo/"><i class="fh fh-cube" aria-hidden="true"></i> hexo</a><span class="menu-cate-list-count">1</span></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/html/"><i class="fh fh-cube" aria-hidden="true"></i> html</a><span class="menu-cate-list-count">1</span><ul class="menu-cate-list-child"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/html/css/"><i class="fh fh-cube" aria-hidden="true"></i> css</a><span class="menu-cate-list-count">1</span></li></ul></li><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/javaScript/"><i class="fh fh-cube" aria-hidden="true"></i> javaScript</a><span class="menu-cate-list-count">3</span></li></ul>
+                    </dd>
+                </dl>
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-tag" aria-hidden="true"></i> Tags
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        <ul class="menu-tag-list"><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/css/"><i class="fh fh-tag" aria-hidden="true"></i> css</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/css3/"><i class="fh fh-tag" aria-hidden="true"></i> css3</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/hexo/"><i class="fh fh-tag" aria-hidden="true"></i> hexo</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/html5/"><i class="fh fh-tag" aria-hidden="true"></i> html5</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/js/"><i class="fh fh-tag" aria-hidden="true"></i> js</a><span class="menu-tag-list-count">3</span></li></ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end menu-->
+
+<div class="row hannah-body">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <!--begin breadcrumb-->
+        <div class="bread-crumb">
+    <ul class="bread-crumb-menu animated rubberBand">
+        <li><a href="/"><i class="fh fh-ravelry" aria-hidden="true"></i> Home</a></li>
+        
+        <li><a href="/categories/javaScript/"><i class="fh fh-cube" aria-hidden="true"></i> javaScript</a>
+        </li>
+        
+        <li>
+            
+            <i class="fh fh-newspaper-o" aria-hidden="true"></i>
+            
+            js数组方法大全
+        </li>
+        
+    </ul>
+    <div class="bread-crumb-search">
+        <div class="search">
+    <i class="fh fh-search icon-search"></i>
+    <input placeholder="Search ..." onkeyup="searchFunc(this,event,'/search.xml')"
+           class="input-search animated fadeInRight"/>
+    <div class="search-result animated fadeInRight">
+        <a class="animated tada col-lg-12 search-result-item result-link" href="/2018/04/28/媒体查询/">媒体查询使用——@media</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2016/03/29/js数组方法/">js数组方法大全</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2015/10/29/作用域与执行上下文/">作用域与执行上下文</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2015/10/28/02_prototype原型/">原型</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2015/09/23/hello-world/">Hello World</a>
+    </div>
+</div>
+    </div>
+</div>
+        <!--end breadcrumb-->
+        <article class="post animated rollIn">
+    <h1 class="post-title">js数组方法大全</h1>
+    <div class="post-subtitle">
+        
+        <time datetime="2016-03-28T16:00:00.000Z" class="item">
+            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2016-03-29
+        </time>
+        
+        
+        <span class="item">
+      <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
+            
+            <a class="label label-primary tags" href="/categories/javaScript/">
+           <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;javaScript
+        </a>
+            
+        </span>
+        
+        
+        <span class="item">
+        <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
+            
+            <a class="label label-info tags" href="/tags/js/">
+            <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;js
+            </a>
+            
+        </span>
+        
+    </div>
+    
+    <h1 id="js数组方法大全"><a href="#js数组方法大全" class="headerlink" title="js数组方法大全"></a>js数组方法大全</h1><h2 id="JavaScript中创建数组有两种方式"><a href="#JavaScript中创建数组有两种方式" class="headerlink" title="JavaScript中创建数组有两种方式"></a>JavaScript中创建数组有两种方式</h2><h3 id="（一）使用-Array-构造函数："><a href="#（一）使用-Array-构造函数：" class="headerlink" title="（一）使用 Array 构造函数："></a>（一）使用 Array 构造函数：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr1 = new Array(); //创建一个空数组</span><br><span class="line">var arr2 = new Array(20); // 创建一个包含20项的数组</span><br><span class="line">var arr3 = new Array(&quot;lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;); // 创建一个包含3个字符串的数组</span><br></pre></td></tr></table></figure>
+<h3 id="（二）使用数组字面量表示法："><a href="#（二）使用数组字面量表示法：" class="headerlink" title="（二）使用数组字面量表示法："></a>（二）使用数组字面量表示法：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr4 = []; //创建一个空数组</span><br><span class="line">var arr5 = [20]; // 创建一个包含1项的数组</span><br><span class="line">var arr6 = [&quot;lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;]; // 创建一个包含3个字符串的数组</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="数组的方法有数组原型方法，也有从object对象继承来的方法，这里我们只介绍数组的原型方法，数组原型方法主要有以下这些："><a href="#数组的方法有数组原型方法，也有从object对象继承来的方法，这里我们只介绍数组的原型方法，数组原型方法主要有以下这些：" class="headerlink" title="数组的方法有数组原型方法，也有从object对象继承来的方法，这里我们只介绍数组的原型方法，数组原型方法主要有以下这些："></a>数组的方法有数组原型方法，也有从object对象继承来的方法，这里我们只介绍数组的原型方法，数组原型方法主要有以下这些：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">join()</span><br><span class="line">push()和pop()</span><br><span class="line">shift() 和 unshift()</span><br><span class="line">sort()</span><br><span class="line">reverse()</span><br><span class="line">concat()</span><br><span class="line">slice()</span><br><span class="line">splice()</span><br><span class="line">indexOf()和 lastIndexOf() （ES5新增）</span><br><span class="line">forEach() （ES5新增）</span><br><span class="line">map() （ES5新增）</span><br><span class="line">filter() （ES5新增）</span><br><span class="line">every() （ES5新增）</span><br><span class="line">some() （ES5新增）</span><br><span class="line">reduce()和 reduceRight() （ES5新增）</span><br></pre></td></tr></table></figure>
+<hr>
+<p>下面详细介绍一下各个方法的基本功能。</p>
+<h3 id="1、join"><a href="#1、join" class="headerlink" title="1、join()"></a>1、join()</h3><p>join(separator): 将数组的元素组起一个字符串，以separator为分隔符，省略的话则用默认用逗号为分隔符，该方法只接收一个参数：即分隔符。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1,2,3];</span><br><span class="line">console.log(arr.join()); // 1,2,3</span><br><span class="line">console.log(arr.join(&quot;-&quot;)); // 1-2-3</span><br><span class="line">console.log(arr); // [1, 2, 3]（原数组不变）</span><br><span class="line">通过join()方法可以实现重复字符串，只需传入字符串以及重复的次数，就能返回重复后的字符串，函数如下：</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function repeatString(str, n) &#123;</span><br><span class="line">return new Array(n + 1).join(str);</span><br><span class="line">&#125;</span><br><span class="line">console.log(repeatString(&quot;abc&quot;, 3)); // abcabcabc</span><br><span class="line">console.log(repeatString(&quot;Hi&quot;, 5)); // HiHiHiHiHi</span><br></pre></td></tr></table></figure>
+<h3 id="2、push-和pop"><a href="#2、push-和pop" class="headerlink" title="2、push()和pop()"></a>2、push()和pop()</h3><p>push(): 可以接收任意数量的参数，把它们逐个添加到数组末尾，并返回修改后数组的长度。<br>pop()：数组末尾移除最后一项，减少数组的 length 值，然后返回移除的项。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&quot;Lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;];</span><br><span class="line">var count = arr.push(&quot;Jack&quot;,&quot;Sean&quot;);</span><br><span class="line">console.log(count); // 5</span><br><span class="line">console.log(arr); // [&quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;, &quot;Jack&quot;, &quot;Sean&quot;]</span><br><span class="line">var item = arr.pop();</span><br><span class="line">console.log(item); // Sean</span><br><span class="line">console.log(arr); // [&quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;, &quot;Jack&quot;]</span><br></pre></td></tr></table></figure></p>
+<h3 id="3、shift-和-unshift"><a href="#3、shift-和-unshift" class="headerlink" title="3、shift() 和 unshift()"></a>3、shift() 和 unshift()</h3><p>shift()：删除原数组第一项，并返回删除元素的值；如果数组为空则返回undefined 。<br>unshift:将参数添加到原数组开头，并返回数组的长度 。</p>
+<p>这组方法和上面的push()和pop()方法正好对应，一个是操作数组的开头，一个是操作数组的结尾。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&quot;Lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;];</span><br><span class="line">var count = arr.unshift(&quot;Jack&quot;,&quot;Sean&quot;);</span><br><span class="line">console.log(count); // 5</span><br><span class="line">console.log(arr); //[&quot;Jack&quot;, &quot;Sean&quot;, &quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;]</span><br><span class="line">var item = arr.shift();</span><br><span class="line">console.log(item); // Jack</span><br><span class="line">console.log(arr); // [&quot;Sean&quot;, &quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;]</span><br></pre></td></tr></table></figure></p>
+<h3 id="4、sort"><a href="#4、sort" class="headerlink" title="4、sort()"></a>4、sort()</h3><p>sort()：按升序排列数组项——即最小的值位于最前面，最大的值排在最后面。</p>
+<p>在排序时，sort()方法会调用每个数组项的 toString()转型方法，然后比较得到的字符串，以确定如何排序。即使数组中的每一项都是数值， sort()方法比较的也是字符串，因此会出现以下的这种情况：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr1 = [&quot;a&quot;, &quot;d&quot;, &quot;c&quot;, &quot;b&quot;];</span><br><span class="line">console.log(arr1.sort()); // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</span><br><span class="line">arr2 = [13, 24, 51, 3];</span><br><span class="line">console.log(arr2.sort()); // [13, 24, 3, 51]</span><br><span class="line">console.log(arr2); // [13, 24, 3, 51](元数组被改变)</span><br></pre></td></tr></table></figure></p>
+<p>为了解决上述问题，sort()方法可以接收一个比较函数作为参数，以便我们指定哪个值位于哪个值的前面。比较函数接收两个参数，如果第一个参数应该位于第二个之前则返回一个负数，如果两个参数相等则返回 0，如果第一个参数应该位于第二个之后则返回一个正数。以下就是一个简单的比较函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function compare(value1, value2) &#123;</span><br><span class="line">if (value1 &lt; value2) &#123;</span><br><span class="line">return -1;</span><br><span class="line">&#125; else if (value1 &gt; value2) &#123;</span><br><span class="line">return 1;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">arr2 = [13, 24, 51, 3];</span><br><span class="line">console.log(arr2.sort(compare)); // [3, 13, 24, 51]</span><br></pre></td></tr></table></figure></p>
+<p>如果需要通过比较函数产生降序排序的结果，只要交换比较函数返回的值即可：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function compare(value1, value2) &#123;</span><br><span class="line">if (value1 &lt; value2) &#123;</span><br><span class="line">return 1;</span><br><span class="line">&#125; else if (value1 &gt; value2) &#123;</span><br><span class="line">return -1;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">arr2 = [13, 24, 51, 3];</span><br><span class="line">console.log(arr2.sort(compare)); // [51, 24, 13, 3]</span><br></pre></td></tr></table></figure></p>
+<h3 id="5、reverse"><a href="#5、reverse" class="headerlink" title="5、reverse()"></a>5、reverse()</h3><p>reverse()：反转数组项的顺序。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [13, 24, 51, 3];</span><br><span class="line">console.log(arr.reverse()); //[3, 51, 24, 13]</span><br><span class="line">console.log(arr); //[3, 51, 24, 13](原数组改变)</span><br></pre></td></tr></table></figure></p>
+<h3 id="6、concat"><a href="#6、concat" class="headerlink" title="6、concat()"></a>6、concat()</h3><p>concat() ：将参数添加到原数组中。这个方法会先创建当前数组一个副本，然后将接收到的参数添加到这个副本的末尾，最后返回新构建的数组。在没有给 concat()方法传递参数的情况下，它只是复制当前数组并返回副本。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1,3,5,7];</span><br><span class="line">var arrCopy = arr.concat(9,[11,13]);</span><br><span class="line">console.log(arrCopy); //[1, 3, 5, 7, 9, 11, 13]</span><br><span class="line">console.log(arr); // [1, 3, 5, 7](原数组未被修改)</span><br></pre></td></tr></table></figure></p>
+<p>从上面测试结果可以发现：传入的不是数组，则直接把参数添加到数组后面，如果传入的是数组，则将数组中的各个项添加到数组中。但是如果传入的是一个二维数组呢？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arrCopy2 = arr.concat([9,[11,13]]);</span><br><span class="line">console.log(arrCopy2); //[1, 3, 5, 7, 9, Array[2]]</span><br><span class="line">console.log(arrCopy2[5]); //[11, 13]</span><br></pre></td></tr></table></figure></p>
+<p>上述代码中，arrCopy2数组的第五项是一个包含两项的数组，也就是说concat方法只能将传入数组中的每一项添加到数组中，如果传入数组中有些项是数组，那么也会把这一数组项当作一项添加到arrCopy2中。</p>
+<h3 id="7、slice"><a href="#7、slice" class="headerlink" title="7、slice()"></a>7、slice()</h3><p>slice()：返回从原数组中指定开始下标到结束下标之间的项组成的新数组。slice()方法可以接受一或两个参数，即要返回项的起始和结束位置。在只有一个参数的情况下， slice()方法返回从该参数指定位置开始到当前数组末尾的所有项。如果有两个参数，该方法返回起始和结束位置之间的项——但不包括结束位置的项。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1,3,5,7,9,11];</span><br><span class="line">var arrCopy = arr.slice(1);</span><br><span class="line">var arrCopy2 = arr.slice(1,4);</span><br><span class="line">var arrCopy3 = arr.slice(1,-2);</span><br><span class="line">var arrCopy4 = arr.slice(-4,-1);</span><br><span class="line">console.log(arr); //[1, 3, 5, 7, 9, 11](原数组没变)</span><br><span class="line">console.log(arrCopy); //[3, 5, 7, 9, 11]</span><br><span class="line">console.log(arrCopy2); //[3, 5, 7]</span><br><span class="line">console.log(arrCopy3); //[3, 5, 7]</span><br><span class="line">console.log(arrCopy4); //[5, 7, 9]</span><br><span class="line">arrCopy只设置了一个参数，也就是起始下标为1，所以返回的数组为下标1（包括下标1）开始到数组最后。 </span><br><span class="line">arrCopy2设置了两个参数，返回起始下标（包括1）开始到终止下标（不包括4）的子数组。 </span><br><span class="line">arrCopy3设置了两个参数，终止下标为负数，当出现负数时，将负数加上数组长度的值（6）来替换该位置的数，因此就是从1开始到4（不包括）的子数组。 </span><br><span class="line">arrCopy4中两个参数都是负数，所以都加上数组长度6转换成正数，因此相当于slice(2,5)。</span><br></pre></td></tr></table></figure></p>
+<h3 id="8、splice"><a href="#8、splice" class="headerlink" title="8、splice()"></a>8、splice()</h3><p>splice()：很强大的数组方法，它有很多种用法，可以实现删除、插入和替换。<br>删除：可以删除任意数量的项，只需指定 2 个参数：要删除的第一项的位置和要删除的项数。例如， splice(0,2)会删除数组中的前两项。<br>插入：可以向指定位置插入任意数量的项，只需提供 3 个参数：起始位置、 0（要删除的项数）和要插入的项。例如，splice(2,0,4,6)会从当前数组的位置 2 开始插入4和6。<br>替换：可以向指定位置插入任意数量的项，且同时删除任意数量的项，只需指定 3 个参数：起始位置、要删除的项数和要插入的任意数量的项。插入的项数不必与删除的项数相等。例如，splice (2,1,4,6)会删除当前数组位置 2 的项，然后再从位置 2 开始插入4和6。</p>
+<p>splice()方法始终都会返回一个数组，该数组中包含从原始数组中删除的项，如果没有删除任何项，则返回一个空数组。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1,3,5,7,9,11];</span><br><span class="line">var arrRemoved = arr.splice(0,2);</span><br><span class="line">console.log(arr); //[5, 7, 9, 11]</span><br><span class="line">console.log(arrRemoved); //[1, 3]</span><br><span class="line">var arrRemoved2 = arr.splice(2,0,4,6);</span><br><span class="line">console.log(arr); // [5, 7, 4, 6, 9, 11]</span><br><span class="line">console.log(arrRemoved2); // []</span><br><span class="line">var arrRemoved3 = arr.splice(1,1,2,4);</span><br><span class="line">console.log(arr); // [5, 2, 4, 4, 6, 9, 11]</span><br><span class="line">console.log(arrRemoved3); //[7]</span><br></pre></td></tr></table></figure></p>
+<h3 id="9、indexOf-和-lastIndexOf"><a href="#9、indexOf-和-lastIndexOf" class="headerlink" title="9、indexOf()和 lastIndexOf()"></a>9、indexOf()和 lastIndexOf()</h3><p>indexOf()：接收两个参数：要查找的项和（可选的）表示查找起点位置的索引。其中， 从数组的开头（位置 0）开始向后查找。<br>lastIndexOf：接收两个参数：要查找的项和（可选的）表示查找起点位置的索引。其中， 从数组的末尾开始向前查找。</p>
+<p>这两个方法都返回要查找的项在数组中的位置，或者在没找到的情况下返回1。在比较第一个参数与数组中的每一项时，会使用全等操作符。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1,3,5,7,7,5,3,1];</span><br><span class="line">console.log(arr.indexOf(5)); //2</span><br><span class="line">console.log(arr.lastIndexOf(5)); //5</span><br><span class="line">console.log(arr.indexOf(5,2)); //2</span><br><span class="line">console.log(arr.lastIndexOf(5,4)); //2</span><br><span class="line">console.log(arr.indexOf(&quot;5&quot;)); //-1</span><br></pre></td></tr></table></figure></p>
+<h3 id="10、forEach"><a href="#10、forEach" class="headerlink" title="10、forEach()"></a>10、forEach()</h3><p>forEach()：对数组进行遍历循环，对数组中的每一项运行给定函数。这个方法没有返回值。参数都是function类型，默认有传参，参数分别为：遍历的数组内容；第对应的数组索引，数组本身。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5];</span><br><span class="line">arr.forEach(function(x, index, a)&#123;</span><br><span class="line">console.log(x + &apos;|&apos; + index + &apos;|&apos; + (a === arr));</span><br><span class="line">&#125;);</span><br><span class="line">// 输出为：</span><br><span class="line">// 1|0|true</span><br><span class="line">// 2|1|true</span><br><span class="line">// 3|2|true</span><br><span class="line">// 4|3|true</span><br><span class="line">// 5|4|true</span><br></pre></td></tr></table></figure></p>
+<h3 id="11、map"><a href="#11、map" class="headerlink" title="11、map()"></a>11、map()</h3><p>map()：指“映射”，对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。</p>
+<p>下面代码利用map方法实现数组中每个数求平方。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5];</span><br><span class="line">var arr2 = arr.map(function(item)&#123;</span><br><span class="line">return item*item;</span><br><span class="line">&#125;);</span><br><span class="line">console.log(arr2); //[1, 4, 9, 16, 25]</span><br></pre></td></tr></table></figure></p>
+<h3 id="12、filter"><a href="#12、filter" class="headerlink" title="12、filter()"></a>12、filter()</h3><p>filter()：“过滤”功能，数组中的每一项运行给定函数，返回满足过滤条件组成的数组。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];</span><br><span class="line">var arr2 = arr.filter(function(x, index) &#123;</span><br><span class="line">return index % 3 === 0 || x &gt;= 8;</span><br><span class="line">&#125;); </span><br><span class="line">console.log(arr2); //[1, 4, 7, 8, 9, 10]</span><br></pre></td></tr></table></figure></p>
+<h3 id="13、every"><a href="#13、every" class="headerlink" title="13、every()"></a>13、every()</h3><p>every()：判断数组中每一项都是否满足条件，只有所有项都满足条件，才会返回true。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5];</span><br><span class="line">var arr2 = arr.every(function(x) &#123;</span><br><span class="line">return x &lt; 10;</span><br><span class="line">&#125;); </span><br><span class="line">console.log(arr2); //true</span><br><span class="line">var arr3 = arr.every(function(x) &#123;</span><br><span class="line">return x &lt; 3;</span><br><span class="line">&#125;); </span><br><span class="line">console.log(arr3); // false</span><br></pre></td></tr></table></figure></p>
+<h3 id="14、some"><a href="#14、some" class="headerlink" title="14、some()"></a>14、some()</h3><p>some()：判断数组中是否存在满足条件的项，只要有一项满足条件，就会返回true。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3, 4, 5];</span><br><span class="line">var arr2 = arr.some(function(x) &#123;</span><br><span class="line">return x &lt; 3;</span><br><span class="line">&#125;); </span><br><span class="line">console.log(arr2); //true</span><br><span class="line">var arr3 = arr.some(function(x) &#123;</span><br><span class="line">return x &lt; 1;</span><br><span class="line">&#125;); </span><br><span class="line">console.log(arr3); // false</span><br></pre></td></tr></table></figure></p>
+<h3 id="15、reduce-和-reduceRight"><a href="#15、reduce-和-reduceRight" class="headerlink" title="15、reduce()和 reduceRight()"></a>15、reduce()和 reduceRight()</h3><p>这两个方法都会实现迭代数组的所有项，然后构建一个最终返回的值。reduce()方法从数组的第一项开始，逐个遍历到最后。而 reduceRight()则从数组的最后一项开始，向前遍历到第一项。</p>
+<p>这两个方法都接收两个参数：一个在每一项上调用的函数和（可选的）作为归并基础的初始值。</p>
+<p>传给 reduce()和 reduceRight()的函数接收 4 个参数：前一个值、当前值、项的索引和数组对象。这个函数返回的任何值都会作为第一个参数自动传给下一项。第一次迭代发生在数组的第二项上，因此第一个参数是数组的第一项，第二个参数就是数组的第二项。</p>
+<p>下面代码用reduce()实现数组求和，数组一开始加了一个初始值10。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var values = [1,2,3,4,5];</span><br><span class="line">var sum = values.reduceRight(function(prev, cur, index, array)&#123;</span><br><span class="line">return prev + cur;</span><br><span class="line">&#125;,10);</span><br><span class="line">console.log(sum); //25</span><br></pre></td></tr></table></figure></p>
+
+</article>
+<ol class="animated rollIn hannah-toc"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-1"><a class="animated rollIn hannah-toc-link" href="#js数组方法大全"><span class="animated rollIn hannah-toc-text">js数组方法大全</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-2"><a class="animated rollIn hannah-toc-link" href="#JavaScript中创建数组有两种方式"><span class="animated rollIn hannah-toc-text">JavaScript中创建数组有两种方式</span></a><ol class="animated rollIn hannah-toc-child"><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#（一）使用-Array-构造函数："><span class="animated rollIn hannah-toc-text">（一）使用 Array 构造函数：</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#（二）使用数组字面量表示法："><span class="animated rollIn hannah-toc-text">（二）使用数组字面量表示法：</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#数组的方法有数组原型方法，也有从object对象继承来的方法，这里我们只介绍数组的原型方法，数组原型方法主要有以下这些："><span class="animated rollIn hannah-toc-text">数组的方法有数组原型方法，也有从object对象继承来的方法，这里我们只介绍数组的原型方法，数组原型方法主要有以下这些：</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#1、join"><span class="animated rollIn hannah-toc-text">1、join()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#2、push-和pop"><span class="animated rollIn hannah-toc-text">2、push()和pop()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#3、shift-和-unshift"><span class="animated rollIn hannah-toc-text">3、shift() 和 unshift()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#4、sort"><span class="animated rollIn hannah-toc-text">4、sort()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#5、reverse"><span class="animated rollIn hannah-toc-text">5、reverse()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#6、concat"><span class="animated rollIn hannah-toc-text">6、concat()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#7、slice"><span class="animated rollIn hannah-toc-text">7、slice()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#8、splice"><span class="animated rollIn hannah-toc-text">8、splice()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#9、indexOf-和-lastIndexOf"><span class="animated rollIn hannah-toc-text">9、indexOf()和 lastIndexOf()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#10、forEach"><span class="animated rollIn hannah-toc-text">10、forEach()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#11、map"><span class="animated rollIn hannah-toc-text">11、map()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#12、filter"><span class="animated rollIn hannah-toc-text">12、filter()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#13、every"><span class="animated rollIn hannah-toc-text">13、every()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#14、some"><span class="animated rollIn hannah-toc-text">14、some()</span></a></li><li class="animated rollIn hannah-toc-item animated rollIn hannah-toc-level-3"><a class="animated rollIn hannah-toc-link" href="#15、reduce-和-reduceRight"><span class="animated rollIn hannah-toc-text">15、reduce()和 reduceRight()</span></a></li></ol></li></ol></li></ol>
+<div class="animated bounceInDown paginations">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <nav>
+            
+            <a href="/2018/04/28/媒体查询/" class="prev col-md-2 col-xs-4 text-left">&larr; Prev</a>
+            
+            <span class="page-content col-md-8  col-xs-4 text-center">
+                
+            </span>
+            
+            <a href="/2015/10/29/作用域与执行上下文/" class="next col-md-2 col-xs-4 text-right">Next &rarr;</a>
+            
+        </nav>
+        <div>
+            <div class="col-md-6 col-xs-6 text-left">
+                
+                媒体查询使用——@media
+                
+            </div>
+            <div class="col-md-6 col-xs-6 text-right">
+                
+                作用域与执行上下文
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--begin comments-->
+        
+<div class="comments" id="comments">
+    
+
+</div>
+
+
+        <!--end comments-->
+    </div>
+</div>
+
+<!--begin footer-->
+<footer id="footer" class="footer animated fadeInUp hide">
+    <p><i class="copy">&copy;</i> 2018 <a href="https://github.com/zy499">Zy499</a> All Right Reserved.</p>
+    <p>Powered by <a href="http://hexo.io">Hexo</a></p>
+</footer>
+<!--end footer-->
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/hannah.js"></script>
+
+<script src="/js/canvas-nest.js"></script>
+
+
+<!--begin analytics-->
+
+
+<!--end analytics-->
+<!--begin canvas-->
+<canvas id="c_n2" width="1680" height="638" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.977514;"></canvas>
+<!--end canvas-->
+</body>
+<!--end body-->
+</html>
